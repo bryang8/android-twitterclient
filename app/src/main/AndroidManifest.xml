@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projects.bryang8.com.twitterclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".TwitterClientApp"
+        android:allowBackup="true"
+        android:icon="@drawable/twitter_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".login.ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".main.ui.MainActivity"></activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1b8b30350bc8c7b9f92836a121044e66b4ea1662" />
+        
+    </application>
+
+</manifest>
